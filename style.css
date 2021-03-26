@@ -44,11 +44,8 @@ td, th {
 }
 
 body {
-  background: black;
-}
-
-p {
-  margin: 1rem;
+  max-width: 600px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

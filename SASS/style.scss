@@ -1,11 +1,15 @@
 @import "./libs/reset.scss";
+@import "./libs/responsive.scss";
+@import "./libs/mixins.scss";
+@import "./libs/functions.scss";
 
 body{
-    background:black;
+    max-width: 600px;
+    margin:auto;
 }
 
 
 
-p{
-    margin: 1rem;
+h1{
+   
 }
