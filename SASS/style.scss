@@ -1,7 +1,11 @@
 @import "./libs/reset.scss";
-@import "./libs/responsive.scss";
 @import "./libs/mixins.scss";
 @import "./libs/functions.scss";
+@import "./libs/responsive.scss";
+
+
+$primary: #9356DC;
+$secondary: #FF79DA;
 
 body{
     max-width: 600px;
@@ -10,6 +14,7 @@ body{
 
 
 
+
 h1{
-   
+ color: $primary;
 }
