@@ -6,15 +6,62 @@
 
 $primary: #9356DC;
 $secondary: #FF79DA;
+$tertiary : #99E2D0;
+$linear: linear-gradient($primary 20%, $secondary 30%);
 
 body{
-    max-width: 600px;
+    max-width: 400px;
     margin:auto;
+    font-family: 'roboto', sans-serif;
+}
+header{
+    background-color: lighten($tertiary, 20);
+    height: 500px;
+    
 }
 
 
+.logo{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+}
+.place{
+    display:flex;
+    background-color: darken($tertiary, 10);
+    justify-content: center;
+    padding:10px;
+}
+.accroche_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:30px;
+    justify-content: space-between;
+    height:175px;
+   
+}
 
-
-h1{
- color: $primary;
+a{
+    text-decoration: none;
+}
+.btn{
+    display: flex;
+    align-content: flex-end;
+    font-size: 17px;
+    padding:10px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 20px;
+    @include horizontal-gradient($primary, $secondary)
+    
+    
+}
+.info_restaurant{
+    
+    width: 300px;
+    /**display: flex;
+    align-items: center;**/
 }

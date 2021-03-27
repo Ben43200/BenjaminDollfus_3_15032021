@@ -46,11 +46,90 @@ td, th {
 }
 
 body {
-  max-width: 600px;
+  max-width: 400px;
   margin: auto;
+  font-family: 'roboto', sans-serif;
 }
 
-h1 {
-  color: #9356DC;
+header {
+  background-color: #e8f9f5;
+  height: 500px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  font-family: 'Shrikhand', cursive;
+  font-size: 30px;
+}
+
+.place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #71d7be;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.accroche_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 175px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  font-size: 17px;
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  border-radius: 20px;
+  /* fallback/image non-cover color */
+  background-color: #9356DC;
+  /* Firefox 3.6+ */
+  /* Safari 4+, Chrome 1+ */
+  /* Safari 5.1+, Chrome 10+ */
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(left, #9356DC 0%, #FF79DA 100%);
+  /* IE10+ */
+  /* Standard */
+  background: -webkit-gradient(linear, left top, right top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to right, #9356DC 0%, #FF79DA 100%);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+
+.info_restaurant {
+  width: 300px;
+  /**display: flex;
+    align-items: center;**/
 }
 /*# sourceMappingURL=style.css.map */

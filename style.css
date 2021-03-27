@@ -44,12 +44,74 @@ td, th {
 }
 
 body {
-  max-width: 600px;
+  max-width: 400px;
   margin: auto;
+  font-family: "roboto", sans-serif;
 }
 
-h1 {
-  color: #9356DC;
+header {
+  background-color: #e8f9f5;
+  height: 500px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+}
+
+.place {
+  display: flex;
+  background-color: #71d7be;
+  justify-content: center;
+  padding: 10px;
+}
+
+.accroche_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  justify-content: space-between;
+  height: 175px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  align-content: flex-end;
+  font-size: 17px;
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  border-radius: 20px;
+  /* fallback/image non-cover color */
+  background-color: #9356DC;
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(left, #9356DC 0%, #FF79DA 100%);
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #9356DC), color-stop(100%, #FF79DA));
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient(left, #9356DC 0%, #FF79DA 100%);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(left, #9356DC 0%, #FF79DA 100%);
+  /* IE10+ */
+  background: -ms-linear-gradient(left, #9356DC 0%, #FF79DA 100%);
+  /* Standard */
+  background: linear-gradient(to right, #9356DC 0%, #FF79DA 100%);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$from", endColorstr="$to",GradientType=1 );
+}
+
+.info_restaurant {
+  width: 300px;
+  /**display: flex;
+  align-items: center;**/
 }
 
 /*# sourceMappingURL=style.css.map */
