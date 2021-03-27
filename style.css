@@ -47,11 +47,12 @@ body {
   max-width: 400px;
   margin: auto;
   font-family: "roboto", sans-serif;
+  background-color: white;
 }
 
 header {
   background-color: #e8f9f5;
-  height: 500px;
+  height: 300px;
 }
 
 .logo {
@@ -67,6 +68,10 @@ header {
   background-color: #71d7be;
   justify-content: center;
   padding: 10px;
+}
+
+.fas {
+  margin-right: 10px;
 }
 
 .accroche_title {
@@ -107,11 +112,33 @@ a {
   /* IE6-9 */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$from", endColorstr="$to",GradientType=1 );
 }
+.btn:hover {
+  /* fallback/image non-cover color */
+  background-color: #FF79DA;
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(left, #FF79DA 0%, #9356DC 100%);
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #FF79DA), color-stop(100%, #9356DC));
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient(left, #FF79DA 0%, #9356DC 100%);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(left, #FF79DA 0%, #9356DC 100%);
+  /* IE10+ */
+  background: -ms-linear-gradient(left, #FF79DA 0%, #9356DC 100%);
+  /* Standard */
+  background: linear-gradient(to right, #FF79DA 0%, #9356DC 100%);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$from", endColorstr="$to",GradientType=1 );
+}
 
 .info_restaurant {
   width: 300px;
   /**display: flex;
   align-items: center;**/
+}
+
+.descript {
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
