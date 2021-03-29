@@ -23,3 +23,49 @@
     /* IE6-9 */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
   }
+
+
+  //The mixin that will permit to display correctly the vector as mask with appropriate image
+@mixin background-svg-content($image, $color, $height, $width) {  
+    background-image: none;
+    background-color: $color;
+    background-size: auto;
+    display: inline-block;
+    -webkit-mask-image:  url($image);
+    mask-image: url($image);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+/**
+ *
+ * This mixin will permit to display a colored background image following the 
+ * browser capacity, if not any an alternative image is displayed. If not any alternative
+ * image is given, the image is used as alternative as well 
+ */
+@mixin background-svg($image, $altimage : $image, $color : #999999, $height : 20px, $width : 20px) {  
+    width: $width;
+    height: $height;
+    //For ie 9+ browsers (alternative image is displayed)
+    @media screen\0 {   
+        background-image: url($altimage);
+        background-size: $width $height;
+    }
+    //For edge browsers (alternative image is displayed)
+    @supports (-ms-ime-align:auto) {   
+        background-image: url($altimage);
+        background-size: $width $height;
+    }
+    //For webkit compatible browsers but we exclude edge that does not display correctly the image
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @supports (not (-ms-ime-align:auto)) { 
+            //Calls the other mixin
+            @include background-svg-content($image, $color, $height, $width);
+        }
+    }
+    //At last for FF
+    @-moz-document url-prefix() {
+        @include background-svg-content($image, $color, $height, $width);
+    }
+}
+

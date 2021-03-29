@@ -43,6 +43,12 @@ td, th {
   padding: 0;
 }
 
+/**
+ *
+ * This mixin will permit to display a colored background image following the 
+ * browser capacity, if not any an alternative image is displayed. If not any alternative
+ * image is given, the image is used as alternative as well 
+ */
 body {
   max-width: 400px;
   margin: auto;
@@ -129,6 +135,33 @@ a {
   background: linear-gradient(to right, #FF79DA 0%, #9356DC 100%);
   /* IE6-9 */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$from", endColorstr="$to",GradientType=1 );
+}
+
+.menu_descript {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn_menu {
+  display: flex;
+  align-items: baseline;
+  border-radius: 20px;
+  width: 400px;
+  justify-content: center;
+}
+.btn_menu .circle {
+  margin: 10px;
+  width: 17px;
+  background: #a16be0;
+  height: 17px;
+  text-align: center;
+  border-radius: 100px;
+}
+.btn_menu .fa-store {
+  color: #9356DC;
 }
 
 .info_restaurant {
