@@ -65,11 +65,14 @@ a{
     margin-top: 20px;
     color: white;
     border-radius: 20px;
-    @include horizontal-gradient($primary, $secondary);
+    @include gradient-vertical($primary, $secondary);
     
     &:hover{
-        @include horizontal-gradient($secondary, $primary)
+        @include horizontal-gradient($secondary, $primary);
     }
+}
+.descript{
+    font-size: 25px;
 }
 .menu_descript{
     height: 150px;
@@ -108,7 +111,4 @@ a{
     width: 300px;
     /**display: flex;
     align-items: center;**/
-}
-.descript{
-    font-size: 25px;
 }

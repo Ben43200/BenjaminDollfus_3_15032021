@@ -123,19 +123,11 @@ a {
   margin-top: 20px;
   color: white;
   border-radius: 20px;
-  /* fallback/image non-cover color */
-  background-color: #9356DC;
-  /* Firefox 3.6+ */
-  /* Safari 4+, Chrome 1+ */
-  /* Safari 5.1+, Chrome 10+ */
-  /* Opera 11.10+ */
-  background-image: -o-linear-gradient(left, #9356DC 0%, #FF79DA 100%);
-  /* IE10+ */
-  /* Standard */
-  background: -webkit-gradient(linear, left top, right top, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(to right, #9356DC 0%, #FF79DA 100%);
-  /* IE6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+  background-color: #be64db;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9356DC', endColorstr='#FFFF79DA', GradientType=0);
 }
 
 .btn:hover {
@@ -152,6 +144,10 @@ a {
   background: linear-gradient(to right, #FF79DA 0%, #9356DC 100%);
   /* IE6-9 */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+
+.descript {
+  font-size: 25px;
 }
 
 .menu_descript {
@@ -202,9 +198,5 @@ a {
   width: 300px;
   /**display: flex;
     align-items: center;**/
-}
-
-.descript {
-  font-size: 25px;
 }
 /*# sourceMappingURL=style.css.map */

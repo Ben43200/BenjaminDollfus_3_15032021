@@ -137,6 +137,10 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$from", endColorstr="$to",GradientType=1 );
 }
 
+.descript {
+  font-size: 25px;
+}
+
 .menu_descript {
   height: 150px;
   display: flex;
@@ -168,10 +172,6 @@ a {
   width: 300px;
   /**display: flex;
   align-items: center;**/
-}
-
-.descript {
-  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
