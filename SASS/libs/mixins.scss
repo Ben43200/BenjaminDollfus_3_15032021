@@ -1,3 +1,4 @@
+
 @mixin horizontal-gradient($from, $to, $stop: 100%) {
     /* fallback/image non-cover color */
     background-color: $from;
@@ -69,7 +70,7 @@
     }
 }
 
-@mixin gradient-vertical($startColor, $endColor) {
+@mixin gradient-vertical($startColor,$endColor) {
     background-color: mix($startColor, $endColor, 60%);
     background-image: -moz-linear-gradient(top, $startColor, $endColor); // FF 3.6+
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), to($endColor)); // Safari 4+, Chrome 2+

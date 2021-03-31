@@ -65,11 +65,12 @@ a{
     margin-top: 20px;
     color: white;
     border-radius: 20px;
-    @include gradient-vertical($primary, $secondary);
+    @include gradient-vertical($secondary, $primary);
     
     &:hover{
-        @include horizontal-gradient($secondary, $primary);
+        @include gradient-vertical($secondary, $primary)
     }
+
 }
 .descript{
     font-size: 25px;
