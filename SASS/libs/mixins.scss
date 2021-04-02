@@ -80,3 +80,16 @@
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($startColor)}', endColorstr='#{ie-hex-str($endColor)}', GradientType=0); // IE9 and down
   }
+  @mixin radius($borderRadius){
+      border-radius: 5px;
+      padding: 10px;
+      background-color: lighten($tertiary, 20);
+      
+  }
+
+  @mixin heart{
+    font-size: 25px;
+    margin-right: 3px;
+     margin-top:25px;
+    
+  }

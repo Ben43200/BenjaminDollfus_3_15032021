@@ -112,6 +112,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,5 +194,79 @@ a {
   width: 300px;
   /**display: flex;
     align-items: center;**/
+}
+
+.restaurants {
+  height: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #e8f9f5;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+figure {
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+figcaption {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /**align-items: baseline;**/
+}
+
+.custom-checkbox input[type="checkbox"],
+.custom-checkbox .checked {
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checked {
+  display: inline-block;
+  color: green;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
+  display: none;
+  color: red;
+}
+
+.icon-background2 {
+  color: red;
+}
+
+.icon-background1 {
+  color: green;
 }
 /*# sourceMappingURL=style.css.map */
