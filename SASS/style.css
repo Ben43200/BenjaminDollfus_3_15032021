@@ -272,7 +272,7 @@ figcaption {
 
 .fa.fas.fa-heart {
   position: absolute;
-  color: black;
+  color: #9356DC;
 }
 
 .fa.far.fa-heart {
@@ -284,7 +284,7 @@ figcaption {
 }
 
 .fa.far.fa-heart:hover {
-  color: green;
+  color: #9356DC;
   position: absolute;
 }
 
