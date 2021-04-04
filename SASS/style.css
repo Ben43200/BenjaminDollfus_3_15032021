@@ -245,8 +245,18 @@ figcaption {
       -ms-flex-pack: justify;
           justify-content: space-between;
   /**align-items: baseline;**/
+  position: relative;
 }
 
+.fa-heart {
+  font-size: 30px;
+}
+
+/**
+.fa-heart:hover{
+    color: $primary;
+    background-color: $primary;
+}**/
 .custom-checkbox input[type="checkbox"],
 .custom-checkbox .checked {
   display: none;
@@ -254,19 +264,31 @@ figcaption {
 
 .custom-checkbox input[type="checkbox"]:checked ~ .checked {
   display: inline-block;
-  color: green;
 }
 
 .custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
   display: none;
-  color: red;
 }
 
-.icon-background2 {
-  color: red;
+.fa.fas.fa-heart {
+  position: absolute;
+  color: black;
 }
 
-.icon-background1 {
+.fa.far.fa-heart {
+  position: absolute;
+  color: whitesmoke;
+  font-size: 25px;
+  left: 2px;
+  top: 2px;
+}
+
+.fa.far.fa-heart:hover {
   color: green;
+  position: absolute;
+}
+
+.heart-2 {
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
